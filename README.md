@@ -64,11 +64,16 @@ This software is tested on Ubuntu 14.04 LTS (64bit).
 Training scripts are included in *./training/* directory
 
 **To train DecoupledNet with various setting, you can run following scripts**
-0. 001_convert_classification_network_to_fp_bp_network.sh: converting classification network to make forward-backward propagation possible (this converted model is prerequisite for DecoupledNet training)
-0. 002_train_seg_Full_anno.sh: training DecoupledNet with full segmentation annotations
-0. 003_train_seg_25_anno.sh: training DecoupledNet with 25 segmentation annotations per class
-0. 004_train_seg_10_anno.sh: training DecoupledNet with 10 segmentation annotations per class
-0. 005_train_seg_5_anno.sh: training DecoupledNet with 5 segmentation annotations per class
+  0. 001_convert_classification_network_to_fp_bp_network.sh: 
+    * converting classification network to make forward-backward propagation possible (this converted model is prerequisite for DecoupledNet training)
+  0. 002_train_seg_Full_anno.sh: 
+    * training DecoupledNet with full segmentation annotations
+  0. 003_train_seg_25_anno.sh: 
+    * training DecoupledNet with 25 segmentation annotations per class
+  0. 004_train_seg_10_anno.sh: 
+    * training DecoupledNet with 10 segmentation annotations per class
+  0. 005_train_seg_5_anno.sh: 
+    * training DecoupledNet with 5 segmentation annotations per class
 
 ### Inference EDeconvNet+CRF
 
