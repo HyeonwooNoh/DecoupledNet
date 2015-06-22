@@ -27,17 +27,17 @@ If you're using this code in a publication, please cite our papers.
 If you need model definition and pre-trained model only, you can download them from following location:
   0. caffe for DecoupledNet: https://github.com/HyeonwooNoh/caffe
   0. DecoupledNet [Full annotation] : 
-    0. definition: http://cvlab.postech.ac.kr/research/decouplednet/model/DecoupledNet_Full_anno/DecoupledNet_Full_anno_inference_deploy.prototxt
-    0. weight: http://cvlab.postech.ac.kr/research/decouplednet/model/DecoupledNet_Full_anno/DecoupledNet_Full_anno_inference.caffemodel
+    0. [prototxt] (http://cvlab.postech.ac.kr/research/decouplednet/model/DecoupledNet_Full_anno/DecoupledNet_Full_anno_inference_deploy.prototxt)
+    0. [caffemodel] (http://cvlab.postech.ac.kr/research/decouplednet/model/DecoupledNet_Full_anno/DecoupledNet_Full_anno_inference.caffemodel)
   0. DecoupledNet [25 annotations] : 
-    0. definition: http://cvlab.postech.ac.kr/research/decouplednet/model/DecoupledNet_25_anno/DecoupledNet_25_anno_inference_deploy.prototxt
-    0. weight: http://cvlab.postech.ac.kr/research/decouplednet/model/DecoupledNet_25_anno/DecoupledNet_25_anno_inference.caffemodel
+    0. [prototxt] (http://cvlab.postech.ac.kr/research/decouplednet/model/DecoupledNet_25_anno/DecoupledNet_25_anno_inference_deploy.prototxt)
+    0. [caffemodel] (http://cvlab.postech.ac.kr/research/decouplednet/model/DecoupledNet_25_anno/DecoupledNet_25_anno_inference.caffemodel)
   0. DecoupledNet [10 annotations] : 
-    0. definition: http://cvlab.postech.ac.kr/research/decouplednet/model/DecoupledNet_10_anno/DecoupledNet_10_anno_inference_deploy.prototxt
-    0. weight: http://cvlab.postech.ac.kr/research/decouplednet/model/DecoupledNet_10_anno/DecoupledNet_10_anno_inference.caffemodel
+    0. [prototxt] (http://cvlab.postech.ac.kr/research/decouplednet/model/DecoupledNet_10_anno/DecoupledNet_10_anno_inference_deploy.prototxt)
+    0. [caffemodel] (http://cvlab.postech.ac.kr/research/decouplednet/model/DecoupledNet_10_anno/DecoupledNet_10_anno_inference.caffemodel)
   0. DecoupledNet [5 annotations] : 
-    0. definition: http://cvlab.postech.ac.kr/research/decouplednet/model/DecoupledNet_5_anno/DecoupledNet_5_anno_inference_deploy.prototxt
-    0. weight: http://cvlab.postech.ac.kr/research/decouplednet/model/DecoupledNet_5_anno/DecoupledNet_5_anno_inference.caffemodel
+    0. [prototxt] (http://cvlab.postech.ac.kr/research/decouplednet/model/DecoupledNet_5_anno/DecoupledNet_5_anno_inference_deploy.prototxt)
+    0. [caffemodel] (http://cvlab.postech.ac.kr/research/decouplednet/model/DecoupledNet_5_anno/DecoupledNet_5_anno_inference.caffemodel)
 
 ### Licence
 
