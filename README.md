@@ -52,21 +52,23 @@ This software is tested on Ubuntu 14.04 LTS (64bit).
   0. MATLAB (tested with 2014b on 64-bit Linux)
   0. prerequisites for caffe(http://caffe.berkeleyvision.org/installation.html#prequequisites)
 
-### Installing DeconvNet
+### Installing DecoupledNet
 
-**By running "setup.sh" you can download all the necessary file for training and inference include:**
+**By running "setup.sh" you can download all the necessary file for training and inference including:**
   0. caffe: you need modified version of caffe which support DeconvNet - https://github.com/HyeonwooNoh/caffe.git
-  0. data: data used for training stage 1 and 2
-  0. model: caffemodel of trained DeconvNet and other caffemodels required for training
+  0. data: data used for training
+  0. model: caffemodel of trained DecoupledNet and caffemodel of pre-trained classification network
 
-### Training DeconvNet
+### Training DecoupledNet
 
 Training scripts are included in *./training/* directory
 
-**To train DeconvNet you can simply run following scripts in order:**
-  0. 001\_start\_train.sh : script for first stage training
-  0. 002\_start\_train.sh : script for second stage training
-  0. 003\_start\_make\_bn\_layer\_testable : script converting trained DeconvNet with bn layer to inference mode
+**To train DecoupledNet with various setting, you can run following scripts**
+0. 001_convert_classification_network_to_fp_bp_network.sh: converting classification network to make forward-backward propagation possible (this converted model is prerequisite for DecoupledNet training)
+0. 002_train_seg_Full_anno.sh: training DecoupledNet with full segmentation annotations
+0. 003_train_seg_25_anno.sh: training DecoupledNet with 25 segmentation annotations per class
+0. 004_train_seg_10_anno.sh: training DecoupledNet with 10 segmentation annotations per class
+0. 005_train_seg_5_anno.sh: training DecoupledNet with 5 segmentation annotations per class
 
 ### Inference EDeconvNet+CRF
 
