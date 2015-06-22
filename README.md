@@ -7,7 +7,7 @@ Acknowledgements: Thanks to Yangqing Jia and the BVLC team for creating Caffe.
 ### Introduction
 
 DecoupledNet is semantic segmentation system which using heterogeneous annotations.
-Using pre-trained classification network, DecoupledNet obtains excellent results even with very small amount of segmentation annotations.
+From pre-trained classification network, DecoupledNet fine-tune the segmentation network with very small amount of segmentation annotations and obtains excellent results on semantic segmentation task.
 
 Detailed description of the system will be provided by our technical report [arXiv tech report] http://arxiv.org/abs/1506.04924 
 
@@ -25,9 +25,19 @@ If you're using this code in a publication, please cite our papers.
 ### Pre-trained Model
 
 If you need model definition and pre-trained model only, you can download them from following location:
-  0. caffe for DeconvNet: https://github.com/HyeonwooNoh/caffe
-  0. DeconvNet model definition: http://cvlab.postech.ac.kr/research/deconvnet/model/DeconvNet/DeconvNet_inference_deploy.prototxt
-  0. Pre-trained DeconvNet weight: http://cvlab.postech.ac.kr/research/deconvnet/model/DeconvNet/DeconvNet_trainval_inference.caffemodel
+  0. caffe for DecoupledNet: https://github.com/HyeonwooNoh/caffe
+  0. DecoupledNet [Full annotation] : 
+    0. definition: http://cvlab.postech.ac.kr/research/decouplednet/model/DecoupledNet_Full_anno/DecoupledNet_Full_anno_inference_deploy.prototxt
+    0. weight: http://cvlab.postech.ac.kr/research/decouplednet/model/DecoupledNet_Full_anno/DecoupledNet_Full_anno_inference.caffemodel
+  0. DecoupledNet [25 annotations] : 
+    0. definition: http://cvlab.postech.ac.kr/research/decouplednet/model/DecoupledNet_25_anno/DecoupledNet_25_anno_inference_deploy.prototxt
+    0. weight: http://cvlab.postech.ac.kr/research/decouplednet/model/DecoupledNet_25_anno/DecoupledNet_25_anno_inference.caffemodel
+  0. DecoupledNet [10 annotations] : 
+    0. definition: http://cvlab.postech.ac.kr/research/decouplednet/model/DecoupledNet_10_anno/DecoupledNet_10_anno_inference_deploy.prototxt
+    0. weight: http://cvlab.postech.ac.kr/research/decouplednet/model/DecoupledNet_10_anno/DecoupledNet_10_anno_inference.caffemodel
+  0. DecoupledNet [5 annotations] : 
+    0. definition: http://cvlab.postech.ac.kr/research/decouplednet/model/DecoupledNet_5_anno/DecoupledNet_5_anno_inference_deploy.prototxt
+    0. weight: http://cvlab.postech.ac.kr/research/decouplednet/model/DecoupledNet_5_anno/DecoupledNet_5_anno_inference.caffemodel
 
 ### Licence
 
