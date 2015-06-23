@@ -1,6 +1,6 @@
 ## DecoupledNet: Decoupled Deep Neural Network for Semi-supervised Semantic Segmentation 
 
-Created by Seunghoon Hong, Hyeonwoo Noh and Bohyung Han at POSTECH
+Created by Seunghoon Hong (http://cvlab.postech.ac.kr/~maga33/), Hyeonwoo Noh and Bohyung Han at POSTECH
 
 Acknowledgements: Thanks to Yangqing Jia and the BVLC team for creating Caffe.
 
@@ -75,24 +75,13 @@ Training scripts are included in *./training/* directory
   0. 005_train_seg_5_anno.sh: 
     * training DecoupledNet with 5 segmentation annotations per class
 
-### Inference EDeconvNet+CRF
+### DecoupledNet Inference
 
-Run *run_demo.m* to reproduce EDeconvNet+CRF results on VOC2012 test data.
+Run *run_demo.m* to run DecoupledNet on VOC2012 test data.
 
-**This script will generated EDeconvNet+CRF results through following steps:**
-  0. run FCN-8s and cache the score [cache\_FCN8s\_results.m]
-  0. generate DeconvNet score and apply ensemble with FCN-8s score, post processing with densecrf [generate\_EDeconvNet\_CRF\_results.m]
+**This script will run DecoupledNet trained in various settings (Full, 25, 10, 5 annotations):**
+  0. DecoupledNet-Full (66.6 mean I/U on PASCAL VOC 2012 Test)
+  0. DecoupledNet-25   (62.5 mean I/U on PASCAL VOC 2012 Test)
+  0. DecoupledNet-10   (58.7 mean I/U on PASCAL VOC 2012 Test)
+  0. DecoupledNet-5    (54.7 mean I/U on PASCAL VOC 2012 Test)
 
-*EDeconvNet+CRF obtains 72.5 mean I/U on PASCAL VOC 2012 Test*
-
-**External dependencies [can be downloaded by running "setup.sh" script]**
-  0. FCN-8s model and weight file [https://github.com/BVLC/caffe/wiki/Model-Zoo]
-  0. densecrf with matlab wrapper [https://github.com/johannesu/meanfield-matlab.git]
-  0. cached proposal bounding boxes extracted with edgebox object proposal [https://github.com/pdollar/edges] 
-
-
-
-
-
-
- 
