@@ -1,6 +1,6 @@
 ## DecoupledNet: Decoupled Deep Neural Network for Semi-supervised Semantic Segmentation 
 
-Created by Seunghoon Hong (http://cvlab.postech.ac.kr/~maga33/), Hyeonwoo Noh and Bohyung Han at POSTECH
+Created by [Seunghoon Hong](http://cvlab.postech.ac.kr/~maga33/), [Hyeonwoo Noh](http://cvlab.postech.ac.kr/~hyeonwoonoh/) and [Bohyung Han](http://cvlab.postech.ac.kr/~bhhan/) at POSTECH
 
 Acknowledgements: Thanks to Yangqing Jia and the BVLC team for creating Caffe.
 
