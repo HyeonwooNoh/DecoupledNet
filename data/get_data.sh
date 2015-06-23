@@ -9,6 +9,8 @@ rm -rf VOC2012_SEG_AUG.tar.gz
 cd ..
 
 # download image sets for segmentation training
+cd imagesets
+
 wget http://cvlab.postech.ac.kr/research/decouplednet/data/seg_imgset_Full.tar.gz
 tar -zxvf seg_imgset_Full.tar.gz
 rm -rf seg_imgset_Full.tar.gz
@@ -25,4 +27,4 @@ wget http://cvlab.postech.ac.kr/research/decouplednet/data/seg_imgset_5.tar.gz
 tar -zxvf seg_imgset_5.tar.gz
 rm -rf seg_imgset_5.tar.gz
 
-
+cd ..

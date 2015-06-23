@@ -1,4 +1,9 @@
 caffe
 
+#data for training
+data/VOC2012/*
+*.png
+*.jpg
+
 # temporarily created files
 *.swp

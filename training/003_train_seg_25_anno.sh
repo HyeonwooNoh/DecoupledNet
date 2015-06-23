@@ -8,7 +8,7 @@ cd 003_train_seg_25_anno
 # image data
 ln -s ../../data/VOC2012
 # training / validation imageset
-ln -s ../../data/seg_imgset_25
+ln -s ../../data/imagesets/seg_imgset_25
 # caffe
 ln -s ../../caffe
 # pre-trained caffe model (classification network with forward-backward propagation)
