@@ -13,6 +13,15 @@ data/imagesets/*
 training_log
 testing_log
 snapshot
+training/001_convert_classification_network_to_fp_bp_network/*
+training/002_train_seg_Full_anno/*
+training/003_train_seg_25_anno/*
+training/004_train_seg_10_anno/*
+training/005_train_seg_5_anno/*
 
 # temporarily created files
+*~
 *.swp
+*.tar.gz
+*.tar
+*.zip
