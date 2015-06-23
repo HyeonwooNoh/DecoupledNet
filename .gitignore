@@ -25,3 +25,11 @@ training/005_train_seg_5_anno/*
 *.tar.gz
 *.tar
 *.zip
+
+# inference files
+inference/DecoupledNet_10_anno
+inference/DecoupledNet_25_anno
+inference/DecoupledNet_5_anno
+inference/DecoupledNet_Full_anno
+inference/data/VOC2012_TEST
+
