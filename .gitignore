@@ -4,6 +4,15 @@ caffe
 data/VOC2012/*
 *.png
 *.jpg
+data/imagesets/*
+*.txt
+
+# files created in training directory
+*.caffemodel
+*.caffemodel*
+training_log
+testing_log
+snapshot
 
 # temporarily created files
 *.swp
