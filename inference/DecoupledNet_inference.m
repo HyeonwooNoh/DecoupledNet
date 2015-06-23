@@ -50,7 +50,8 @@ for i=1:length(ids)
     cnn_output = caffe('forward', {caffe_im;label});
     fprintf('[0:%f]',toc);    
     cls_score = cnn_output{1};
-    seg_score = cnn_output{2};
+    cls_score_max = cnn_output{2};
+    seg_score = cnn_output{3};
         
     score_map = zeros([config.im_sz,config.im_sz, 21]);
     
@@ -60,9 +61,8 @@ for i=1:length(ids)
     cnn_output = caffe('forward', {caffe_im;label});
     fprintf('[0:%f]',toc);    
     cls_score = cnn_output{1};
-    seg_score = cnn_output{2};
-    
-    seg_score = cnn_output{2};
+    cls_score_max = cnn_output{2};
+    seg_score = cnn_output{3};
             
     softmax_score = exp(seg_score - repmat(max(seg_score, [], 3), [1,1,size(seg_score,3)]));
     softmax_score = softmax_score ./ repmat(sum(softmax_score, 3), [1,1, size(softmax_score,3)]);
@@ -77,7 +77,7 @@ for i=1:length(ids)
             tic;
             cnn_output = caffe('forward', {caffe_im;label});
             fprintf('[%d:%f]',j,toc);
-            seg_score = cnn_output{2};
+            seg_score = cnn_output{3};
             
             softmax_score = exp(seg_score - repmat(max(seg_score, [], 3), [1,1,size(seg_score,3)]));
             softmax_score = softmax_score ./ repmat(sum(softmax_score, 3), [1,1, size(softmax_score,3)]);
