@@ -11,4 +11,8 @@ cd model
 ./get_model.sh
 cd ..
 
+# prepare inference
+cd inference
+./prepare_inference.sh
+cd ..
 
