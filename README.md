@@ -7,7 +7,7 @@ Acknowledgements: Thanks to Yangqing Jia and the BVLC team for creating Caffe.
 ### Introduction
 
 DecoupledNet is semantic segmentation system which using heterogeneous annotations.
-From pre-trained classification network, DecoupledNet fine-tune the segmentation network with very small amount of segmentation annotations and obtains excellent results on semantic segmentation task.
+Based on pre-trained classification network, DecoupledNet fine-tune the segmentation network with very small amount of segmentation annotations and obtains excellent results on semantic segmentation task.
 
 Detailed description of the system will be provided by our technical report [arXiv tech report] http://arxiv.org/abs/1506.04924 
 
