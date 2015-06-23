@@ -11,8 +11,4 @@ cd model
 ./get_model.sh
 cd ..
 
-# prepare inference
-cd inference
-./setup.sh
-cd ..
 
