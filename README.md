@@ -77,9 +77,11 @@ Training scripts are included in *./training/* directory
 
 ### DecoupledNet Inference
 
+Inference scripts are included in *./inference/* directory.
+
 Run *run_demo.m* to run DecoupledNet on VOC2012 test data.
 
-**This script will run DecoupledNet trained in various settings (Full, 25, 10, 5 annotations):**
+**run_demo.m script will run DecoupledNet trained in various settings (Full, 25, 10, 5 annotations):**
   0. DecoupledNet-Full (66.6 mean I/U on PASCAL VOC 2012 Test)
   0. DecoupledNet-25   (62.5 mean I/U on PASCAL VOC 2012 Test)
   0. DecoupledNet-10   (58.7 mean I/U on PASCAL VOC 2012 Test)
